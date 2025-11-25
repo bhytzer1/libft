@@ -3,11 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmandric <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 17:15:08 by dmandric          #+#    #+#             */
-/*   Updated: 2025/11/25 17:15:09 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/11/25 20:14:17 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef LIBFT_H
+# define LIBFT_H
 
+int ft_isalpha(int c);
+
+#endif
