@@ -1,12 +1,73 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/28 00:07:01 by dmandric          #+#    #+#             */
+/*   Updated: 2025/11/29 22:22:22 by dmandric         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int main(void)
-{
-    char ch = 'G';
-    if (ft_isalpha(ch))
-        printf("%c è una lettera\n", ch);
-    else
-        printf("%c NON è una lettera\n", ch);
-    return 0;
-}
+// int	main(void)
+// {
+// 	char	numeri[10] = {1, 2, 3, 4, 5};
+// 	int i = 0;
+	
+// 	printf("prima di bzero: \n");
+// 	while (i < 5)
+// 	{
+// 		printf("%d, ", numeri[i]);
+// 		i++;
+// 	}
+// 	printf("\n");
+// 	i = 5;
+	
+// 	ft_bzero(numeri, i);
+// 	i = 0;
+// 	printf("dopo bzero: \n");
+// 	while(i < 5)
+// 	{
+// 		printf("%d, ", numeri[i]);
+// 		i++;
+// 	}
+// 	printf("\n");
+	
+// }
+
+//memset
+
+// int	main()
+// {
+// 	char buffer[10];
+	
+// 	ft_memset(buffer, 'x', sizeof(buffer));
+// 	buffer[9] = '\0';
+// 	printf("risultato: %s", buffer);
+//     printf("\n");
+// 	return(0);
+// }
+
+// int main()
+// {
+// 	char frase[] = "frase";
+// 	char destinazione[5];
+	
+// 	printf("source prima di memcpy: %s \n", frase);
+// 	ft_memcpy(destinazione, frase, 6);
+// 	printf("destinazione dopo memcpy: %s \n", destinazione);
+// }
+
+// int main()
+// {
+//     char buffer[] = "ABCDEFG";
+//     char destinazione[10];
+//     printf("buffer: %s \n", buffer);
+//     printf("destinazione before memmove: %s \n", destinazione);
+//     ft_memmove(destinazione, buffer, 7);
+//     printf("destinazione after memmove: %s \n", destinazione);
+
+// }

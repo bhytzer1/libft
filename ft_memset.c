@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/25 17:15:08 by dmandric          #+#    #+#             */
-/*   Updated: 2025/11/29 22:21:48 by dmandric         ###   ########.fr       */
+/*   Created: 2025/11/28 20:28:15 by dmandric          #+#    #+#             */
+/*   Updated: 2025/11/29 22:23:21 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+void	ft_memset(void *ptr, int value, int num)
+{
+	char	*p;
+	int		i;
 
-# include <stdio.h>
-# include <unistd.h>
-# include <stdlib.h>
-
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-void	ft_bzero(void *ptr, int num);
-void	ft_memset(void *ptr, int value, int num);
-void	*ft_memcpy(void *dest, void	*src, int numb);
-void 	*ft_memmove(void *dest, void *src, int num);
-
-
-
-#endif
+	p = (char *)ptr;
+	i = 0;
+	while (i < num)
+	{
+		p[i] = value;
+		i++;
+	}
+}
