@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 00:07:01 by dmandric          #+#    #+#             */
-/*   Updated: 2025/11/29 22:22:22 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/11/29 22:41:53 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@
 //     char destinazione[10];
 //     printf("buffer: %s \n", buffer);
 //     printf("destinazione before memmove: %s \n", destinazione);
-//     ft_memmove(destinazione, buffer, 7);
+//     ft_memmove(destinazione, buffer, 8);
 //     printf("destinazione after memmove: %s \n", destinazione);
 
 // }

@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 22:08:45 by dmandric          #+#    #+#             */
-/*   Updated: 2025/11/29 22:16:04 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/11/29 22:39:52 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@ void *ft_memmove(void *dest, void *src, int num)
 	int i;
 
 	i = 0;
-	if (i < num)
+	if (d > s)
 	{
 		i = num - 1;
-		while(i <= 0)
+		while(i >= 0)
 		{
 			d[i] = s [i];
 			i--;
 		}
 	}
-	else;
+	else
 	{
 		i = 0;
 		while (i < num)
