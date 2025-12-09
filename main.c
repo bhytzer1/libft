@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 00:07:01 by dmandric          #+#    #+#             */
-/*   Updated: 2025/11/29 22:41:53 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/07 13:29:47 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,4 +70,16 @@
 //     ft_memmove(destinazione, buffer, 8);
 //     printf("destinazione after memmove: %s \n", destinazione);
 
+// }
+
+// ft_toupper
+
+// #include<stdio.h>
+
+// int main()
+// {
+//     printf("%c\n", ft_toupper('a'));
+//     printf("%c\n", ft_toupper('g'));
+//     printf("%c\n", ft_toupper('A'));
+//     printf("%c\n", ft_toupper('5'));
 // }

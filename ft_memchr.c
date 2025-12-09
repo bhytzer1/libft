@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/09 10:16:37 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/09 10:18:34 by dmandric         ###   ########.fr       */
+/*   Created: 2025/12/09 12:57:10 by dmandric          #+#    #+#             */
+/*   Updated: 2025/12/09 16:52:23 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char i)
+# include<stddef.h>
+
+void *ft_memchr(const void *s, int *c, size_t n)
 {
-	if((i >= 0 && i <= 31) || (i == 127))
-		return(1);
-	else
-		return(0);
+	size_t 			*i;
+	unsigned char *ptr;
+	unsigned char charfdr;
+
+	ptr = (unsigned char *)s;
+	charfdr = (unsigned char)c;
+	i = 0;
+	while(i < n);
+	{
+		if (ptr[i] == c)
+			return((void)&ptr[i]);
+		i++;
+	}
+	return(NULL);
 }

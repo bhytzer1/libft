@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/09 10:16:37 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/09 10:18:34 by dmandric         ###   ########.fr       */
+/*   Created: 2025/12/07 14:39:00 by dmandric          #+#    #+#             */
+/*   Updated: 2025/12/09 11:58:58 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char i)
+#include<unistd.h>
+
+char    *ft_strchr(const char *s, int c)
 {
-	if((i >= 0 && i <= 31) || (i == 127))
-		return(1);
-	else
-		return(0);
+    char finder;
+
+    finder = (char)c;
+    while(*s)
+    {
+        if(*s == finder)
+            return((char *)s);
+        s++;
+    }
+    if (*s == '\0')
+        return((char *)s);
+    return(NULL);
 }
