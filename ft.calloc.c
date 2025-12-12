@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft.calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/09 12:08:55 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/12 22:56:56 by dmandric         ###   ########.fr       */
+/*   Created: 2025/12/12 20:49:05 by dmandric          #+#    #+#             */
+/*   Updated: 2025/12/12 22:07:29 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdlib.h>
+#include <stdint.h>
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	int	i;
+	size_t	total;
+	void	*ptr;
 
-	if (n == 0)
-		return (0);
-	i = 0;
-	while (s1[i] && i < n - 1 && s1[i] == s2[i])
-	{
-		i++;
-	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	if (nmemb == 0
+		|| size == 0)
+		return (malloc(1));
+	if (nmemb != 0 && size > SIZE_MAX / nmemb)
+		return (NULL);
+	total = nmemb * size;
+	ptr = malloc(total);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, total);
+	return (ptr);
 }

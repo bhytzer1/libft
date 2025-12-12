@@ -6,7 +6,7 @@
 #    By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/25 18:10:37 by dmandric          #+#    #+#              #
-#    Updated: 2025/12/09 12:53:34 by dmandric         ###   ########.fr        #
+#    Updated: 2025/12/10 15:13:03 by dmandric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ SRC		= SRCS = ft_isalpha.c \
        ft_strchr.c \
        ft_strrchr.c \
        ft_strncmp.c \
-       ft_strlcat.c
+       ft_strlcat.c \
+       ft_strntr.c
 
 		
 OBJ		= ${SRC:.c=.o}

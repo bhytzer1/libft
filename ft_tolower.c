@@ -6,15 +6,15 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/07 13:46:28 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/07 13:57:58 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/12 22:58:39 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if(c >= 'A' && c <= 'Z')
-    {
-        return (c + 32);
-    }
-    return (c);
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (c + 32);
+	}
+	return (c);
 }

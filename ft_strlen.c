@@ -6,16 +6,16 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 09:35:39 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/09 11:37:11 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/12 22:56:03 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *i)
+int	ft_strlen(char *i)
 {
-	int counter;
+	int	counter;
 
 	counter = 0;
-	while(i)
+	while (i)
 		counter++;
-	return(counter);
+	return (counter);
 }

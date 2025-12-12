@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 00:07:01 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/07 13:29:47 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/12 23:01:26 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 // {
 // 	char	numeri[10] = {1, 2, 3, 4, 5};
 // 	int i = 0;
-	
 // 	printf("prima di bzero: \n");
 // 	while (i < 5)
 // 	{
@@ -25,7 +24,6 @@
 // 	}
 // 	printf("\n");
 // 	i = 5;
-	
 // 	ft_bzero(numeri, i);
 // 	i = 0;
 // 	printf("dopo bzero: \n");
@@ -35,7 +33,6 @@
 // 		i++;
 // 	}
 // 	printf("\n");
-	
 // }
 
 //memset
@@ -43,7 +40,6 @@
 // int	main()
 // {
 // 	char buffer[10];
-	
 // 	ft_memset(buffer, 'x', sizeof(buffer));
 // 	buffer[9] = '\0';
 // 	printf("risultato: %s", buffer);
@@ -55,7 +51,6 @@
 // {
 // 	char frase[] = "frase";
 // 	char destinazione[5];
-	
 // 	printf("source prima di memcpy: %s \n", frase);
 // 	ft_memcpy(destinazione, frase, 6);
 // 	printf("destinazione dopo memcpy: %s \n", destinazione);

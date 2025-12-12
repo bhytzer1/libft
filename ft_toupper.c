@@ -6,16 +6,15 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/07 12:05:11 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/09 12:48:39 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/12 22:58:54 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    while(c >= 'a' && c <= 'z')
-    {
-        return (c - 32);
-    }
-    return(c);
+	while (c >= 'a' && c <= 'z')
+	{
+		return (c - 32);
+	}
+	return (c);
 }
-

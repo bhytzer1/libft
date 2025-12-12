@@ -6,24 +6,24 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/07 14:39:00 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/09 11:58:58 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/12 22:52:18 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#include <unistd.h>
 
-char    *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    char finder;
+	char	finder;
 
-    finder = (char)c;
-    while(*s)
-    {
-        if(*s == finder)
-            return((char *)s);
-        s++;
-    }
-    if (*s == '\0')
-        return((char *)s);
-    return(NULL);
+	finder = (char)c;
+	while (*s)
+	{
+		if (*s == finder)
+			return ((char *)s);
+		s++;
+	}
+	if (*s == '\0')
+		return ((char *)s);
+	return (NULL);
 }
