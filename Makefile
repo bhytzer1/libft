@@ -6,15 +6,15 @@
 #    By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/25 18:10:37 by dmandric          #+#    #+#              #
-#    Updated: 2025/12/10 15:13:03 by dmandric         ###   ########.fr        #
+#    Updated: 2025/12/13 22:17:39 by dmandric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libft.a
-CC		= cc
+CC	       = cc
 CFLAGS	= -Wall -Wextra -Werror
-AR		= ar rcs
-SRC		= SRCS = ft_isalpha.c \
+AR	       = ar rcs
+SRC    = ft_isalpha.c \
        ft_isdigit.c \
        ft_isalnum.c \
        ft_isascii.c \
@@ -30,7 +30,8 @@ SRC		= SRCS = ft_isalpha.c \
        ft_strrchr.c \
        ft_strncmp.c \
        ft_strlcat.c \
-       ft_strntr.c
+       ft_strnstr.c \
+       ft_calloc.c \
 
 		
 OBJ		= ${SRC:.c=.o}

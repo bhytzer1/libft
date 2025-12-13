@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 12:08:55 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/12 22:56:56 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/13 21:40:39 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		i++;
 	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

@@ -6,11 +6,13 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 22:44:40 by dmandric          #+#    #+#             */
-/*   Updated: 2025/11/29 20:52:20 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/13 20:21:13 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *ptr, int num)
+#include <stddef.h>
+
+void	ft_bzero(void *ptr, size_t num)
 {
 	char	*p;
 	int		i;

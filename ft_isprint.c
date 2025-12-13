@@ -6,14 +6,13 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 10:16:37 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/12 22:25:42 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/13 20:13:33 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char i)
+int	ft_isprint(int i)
 {
-	if ((i >= 0 && i <= 31) || (i == 127))
+	if (i >= 32 && i <= 126)
 		return (1);
-	else
-		return (0);
+	return (0);
 }
