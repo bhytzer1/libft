@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 00:07:01 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/12 23:01:26 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/14 19:50:04 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,3 +78,8 @@
 //     printf("%c\n", ft_toupper('A'));
 //     printf("%c\n", ft_toupper('5'));
 // }
+
+int	main(void)
+{
+	printf("%s\n", ft_substr("pizza", '2', '4'));
+}

@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 12:08:27 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/13 22:16:16 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/14 18:13:42 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dest_size)
 	size_t	src_len;
 	size_t	counter;
 
+	if (!dest || !src)
+		return (0);
 	dest_len = 0;
 	while (dest[dest_len] && dest_len < dest_size)
 		dest_len++;

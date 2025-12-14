@@ -1,23 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/09 09:35:39 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/14 18:11:37 by dmandric         ###   ########.fr       */
+/*   Created: 2025/12/14 18:56:58 by dmandric          #+#    #+#             */
+/*   Updated: 2025/12/14 19:54:08 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *i)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	size_t	counter;
+	int		n;
+	int		ctr;
+	int		i;
+	char	*trgt;
 
-	counter = 0;
-	while (i[counter])
-		counter++;
-	return (counter);
+	ctr = 0;
+	if ((!s) || (start > len))
+		return (NULL);
+	n = ft_strlen(s);
+	if (len > n)
+		len = malloc((n + 1) * sizeof(char));
+	while (s[ctr] && len <= n)
+	{
+		if (s[ctr] < start)
+			ctr++;
+		i = 0;
+		while (s[ctr] >= start)
+		{
+			if (i < len)
+			{
+				trgt[ctr] = s[ctr];
+				i++;
+			}
+		}
+	}
+	return (trgt);
 }

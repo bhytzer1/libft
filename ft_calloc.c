@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.calloc.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 20:49:05 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/12 22:07:29 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/14 18:07:22 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
-#include <stdint.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
