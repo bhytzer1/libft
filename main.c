@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
+/*   By: davide <davide@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 00:07:01 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/14 19:50:04 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/16 06:49:41 by davide           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,5 +81,16 @@
 
 int	main(void)
 {
-	printf("%s\n", ft_substr("pizza", '2', '4'));
+	char	**rslt;
+	int		i;
+
+	rslt = ft_split("ciao mondo come stai", ' ');
+	if (!rslt)
+		return (0);
+	i = 0;
+	while (rslt[i] != NULL)
+	{
+		printf("%d: %s\n", i, rslt[i]);
+		i++;
+	}
 }

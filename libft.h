@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
+/*   By: davide <davide@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 17:15:08 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/14 19:50:46 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/16 06:41:42 by davide           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int		ft_tolower(int c);
 
 // Memoria (memory/bzero/memset/memcpy/memmove)
 void	ft_bzero(void *ptr, size_t num);
+char	**ft_split(const char *s, char c);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memset(void *ptr, int value, size_t num);
 void	*ft_memchr(const void *s, int c, size_t n);
