@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 17:15:08 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/16 14:25:33 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/16 14:28:50 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ char	*ft_strdup(const char *s);
 char	*ft_strchr(const char *s, int c);
 char	**ft_split(const char *s, char c);
 char	*ft_strrchr(const char *s, int c);
+char    *ft_strjoin(char const *s1, char const *s2);
+char    *ft_strtrim(char const *s1, char const *set);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcat(char *dest, const char *src, size_t dest_size);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
