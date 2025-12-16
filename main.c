@@ -6,7 +6,7 @@
 /*   By: davide <davide@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 00:07:01 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/16 06:49:41 by davide           ###   ########.fr       */
+/*   Updated: 2025/12/16 07:45:22 by davide           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,18 +79,23 @@
 //     printf("%c\n", ft_toupper('5'));
 // }
 
-int	main(void)
-{
-	char	**rslt;
-	int		i;
+// int	main(void)
+// {
+// 	char	**rslt;
+// 	int		i;
 
-	rslt = ft_split("ciao mondo come stai", ' ');
-	if (!rslt)
-		return (0);
-	i = 0;
-	while (rslt[i] != NULL)
-	{
-		printf("%d: %s\n", i, rslt[i]);
-		i++;
-	}
-}
+// 	rslt = ft_split("ciao mondo come stai", ' ');
+// 	if (!rslt)
+// 		return (0);
+// 	i = 0;
+// 	while (rslt[i] != NULL)
+// 	{
+// 		printf("%d: %s\n", i, rslt[i]);
+// 		i++;
+// 	}
+// }
+
+// int main()
+// {
+// 	printf("%s\n", ft_itoa(-35432));
+// }

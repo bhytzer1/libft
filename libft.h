@@ -6,7 +6,7 @@
 /*   By: davide <davide@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 17:15:08 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/16 06:41:42 by davide           ###   ########.fr       */
+/*   Updated: 2025/12/16 07:42:02 by davide           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t numb);
 void	*ft_memmove(void *dest, const void *src, size_t num);
 
 // Stringhe (string/strlen/strchr/strrchr/strncmp/strlcat)
+char	*ft_itoa(int n);
 size_t	ft_strlen(const char *i);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);

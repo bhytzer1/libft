@@ -6,7 +6,7 @@
 #    By: davide <davide@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/25 18:10:37 by dmandric          #+#    #+#              #
-#    Updated: 2025/12/16 06:41:57 by davide           ###   ########.fr        #
+#    Updated: 2025/12/16 07:42:19 by davide           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ SRC    = ft_isalpha.c \
        ft_strdup.c \
        ft_substr.c \
        ft_split.c \
+       ft_itoa.c \
 
 		
 OBJ		= ${SRC:.c=.o}
