@@ -1,39 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/14 18:56:58 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/18 15:49:04 by dmandric         ###   ########.fr       */
+/*   Created: 2025/12/19 23:08:22 by dmandric          #+#    #+#             */
+/*   Updated: 2025/12/19 23:08:29 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t	n;
-	size_t	s_len;
-	char	*trgt;
+	size_t	i;
+	size_t	src_len;
 
-	if (!s)
-		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
-		len = strdup("");
-	else if (len > s_len - start)
-		len = s_len - start;
-	trgt = malloc(sizeof(char) * (len + 1));
-	if (!trgt)
-		return (NULL);
-	n = 0;
-	while (n < len)
+	src_len = ft_strlen(src);
+	if (size == 0)
+		return (src_len);
+	i = 0;
+	while (src[i] && i < size - 1)
 	{
-		trgt[n] = s[start + n];
-		n++;
+		dst[i] = src[i];
+		i++;
 	}
-	trgt[n] = '\0';
-	return (trgt);
+	dst[i] = '\0';
+	return (src_len);
 }

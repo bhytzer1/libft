@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davide <davide@student.42.fr>              +#+  +:+       +#+        */
+/*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 00:07:01 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/16 07:45:22 by davide           ###   ########.fr       */
+/*   Updated: 2025/12/19 23:10:14 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,4 +98,15 @@
 // int main()
 // {
 // 	printf("%s\n", ft_itoa(-35432));
+// }
+
+// int main()
+// {
+//     t_list *n1;
+//     t_list *n2;
+//     t_list *n3;
+
+//     n1 = ft_lstnew("primo");
+//     n2 = ft_lstnew("secondo");
+//     n3 = ft_lstnew("terzo");
 // }

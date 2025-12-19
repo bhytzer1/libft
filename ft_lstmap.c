@@ -1,39 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/14 18:56:58 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/18 15:49:04 by dmandric         ###   ########.fr       */
+/*   Created: 2025/12/19 15:35:34 by dmandric          #+#    #+#             */
+/*   Updated: 2025/12/19 21:22:30 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t	n;
-	size_t	s_len;
-	char	*trgt;
+	t_list	*new_list;
+	t_list	*new_node;
+	void	*new_content;
 
-	if (!s)
-		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
-		len = strdup("");
-	else if (len > s_len - start)
-		len = s_len - start;
-	trgt = malloc(sizeof(char) * (len + 1));
-	if (!trgt)
-		return (NULL);
-	n = 0;
-	while (n < len)
+	if (!lst || !f || !del)
+		return (new_list);
+	new_list = NULL;
+	while (lst)
 	{
-		trgt[n] = s[start + n];
-		n++;
+		new_content = f(lst->content);
+		new_node = ft_lstnew(new_content);
+		if (new_node == NULL)
+		{
+			del(new_content);
+			ft_lstclear(new_list, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new_list, new_node);
+		lst = lst->next;
 	}
-	trgt[n] = '\0';
-	return (trgt);
 }
