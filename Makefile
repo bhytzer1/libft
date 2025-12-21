@@ -6,7 +6,7 @@
 #    By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/25 18:10:37 by dmandric          #+#    #+#              #
-#    Updated: 2025/12/19 23:10:00 by dmandric         ###   ########.fr        #
+#    Updated: 2025/12/19 23:28:42 by dmandric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,15 @@ SRC = ft_isalpha.c \
       ft_putstr_fd.c \
       ft_putendl_fd.c \
       ft_putnbr_fd.c \
+      ft_lstadd_back.c \
+      ft_lstadd_front.c \
+      ft_lstclear.c \
+      ft_lstdelone.c \
+      ft_lstiter.c \
+      ft_lstlast.c \
+      ft_lstmap.c \
+      ft_lstnew.c \
+      ft_lstsize.c \
 		
 OBJ		= ${SRC:.c=.o}
 

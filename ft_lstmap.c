@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/19 15:35:34 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/19 21:22:30 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/21 11:09:36 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	void	*new_content;
 
 	if (!lst || !f || !del)
-		return (new_list);
+		return (NULL);
 	new_list = NULL;
 	while (lst)
 	{
@@ -28,10 +28,11 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (new_node == NULL)
 		{
 			del(new_content);
-			ft_lstclear(new_list, del);
+			ft_lstclear(&new_list, del);
 			return (NULL);
 		}
 		ft_lstadd_back(&new_list, new_node);
 		lst = lst->next;
 	}
+	return (new_list);
 }

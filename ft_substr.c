@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 18:56:58 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/18 15:49:04 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/21 11:13:58 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 		return (NULL);
 	s_len = ft_strlen(s);
 	if (start >= s_len)
-		len = strdup("");
-	else if (len > s_len - start)
+		len = 0;
+	if (len > s_len - start)
 		len = s_len - start;
 	trgt = malloc(sizeof(char) * (len + 1));
 	if (!trgt)
