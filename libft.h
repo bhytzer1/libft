@@ -6,7 +6,7 @@
 /*   By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 17:15:08 by dmandric          #+#    #+#             */
-/*   Updated: 2025/12/21 11:37:41 by dmandric         ###   ########.fr       */
+/*   Updated: 2025/12/21 12:04:04 by dmandric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *c, int fd);
 void	ft_bzero(void *ptr, size_t num);
 void	*ft_calloc(size_t nmemb, size_t size);
-void	t_lstiter(t_list *lst, void (*f)(void *));
+
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memset(void *ptr, int value, size_t num);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -61,17 +61,19 @@ char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 // Liste
+
 typedef struct s_list
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+	void				*content;
+	struct s_list		*next;
+}	t_list;
 
-t_list	*ft_lstnew(void *content);
-void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
+t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
+void	t_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
