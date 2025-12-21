@@ -6,7 +6,7 @@
 #    By: dmandric <dmandric@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/25 18:10:37 by dmandric          #+#    #+#              #
-#    Updated: 2025/12/19 23:28:42 by dmandric         ###   ########.fr        #
+#    Updated: 2025/12/21 11:18:27 by dmandric         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,6 +56,7 @@ SRC = ft_isalpha.c \
       ft_lstmap.c \
       ft_lstnew.c \
       ft_lstsize.c \
+      ft_memchr.c 
 		
 OBJ		= ${SRC:.c=.o}
 
