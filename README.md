@@ -1,7 +1,3 @@
-📚 Libft
-Mostra immagine
-Mostra immagine
-About
 My implementation of libft - the first project at 42 School. A custom C library that re-codes standard libc functions and adds useful utilities.
 Features
 
